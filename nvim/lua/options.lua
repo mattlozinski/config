@@ -2,6 +2,9 @@ vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 -- enable mouse
 vim.opt.mouse = 'a'
 
+-- persistent undo
+vim.opt.undofile = true
+
 -- indentation stuff
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -24,3 +27,4 @@ vim.opt.incsearch = true
 -- case sensitive when uppercase present
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+

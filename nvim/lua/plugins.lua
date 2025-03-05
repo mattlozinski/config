@@ -1,4 +1,10 @@
 require("lazy").setup({
+    -- advanced undo
+	"mbbill/undotree",
+
+    -- highlight colors
+    "norcalli/nvim-colorizer.lua",
+
     -- markdown
     {
         'MeanderingProgrammer/render-markdown.nvim',

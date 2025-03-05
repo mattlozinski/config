@@ -14,6 +14,9 @@ require("Comment").setup({
     mappings = { extra = false }
 })
 
+-- undotree
+map('n', '<leader>u', vim.cmd.UndotreeToggle)
+
 -- telescope
 local builtin = require('telescope.builtin')
 map('n', '<leader>pf', builtin.find_files, { desc = 'Telescope find files' })
