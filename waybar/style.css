@@ -1,0 +1,10 @@
+* {
+		border: none;
+		font-family: 'Fira Code', 'Symbols Nerd Font Mono';
+		font-size: 14px;
+}
+
+window#waybar {
+		background-color: #1a1b26;
+		color: #c0caf5;
+}
