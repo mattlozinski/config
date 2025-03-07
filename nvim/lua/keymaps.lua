@@ -14,6 +14,9 @@ require("Comment").setup({
     mappings = { extra = false }
 })
 
+-- (for now) lua execution
+map('n', '<leader>r', ":vsp<CR> :term lua %<CR>")
+
 -- undotree
 map('n', '<leader>u', vim.cmd.UndotreeToggle)
 
@@ -35,8 +38,7 @@ map("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 -- barbar
 map('n', '<C-p>', '<Cmd>BufferPin<CR>', opts)       -- pin/unpin buffer
 map('n', '<A-p>', '<Cmd>BufferPick<CR>', opts)      -- buffer pick mode
-map('n', '<C-c>', '<Cmd>BufferClose<CR>', opts)     -- close buffer
-map('n', '<C-S-x>', '<Cmd>:bd!<CR>')           -- force close buffer
+map('n', '<C-c>', '<Cmd>:bd!<CR>')                  -- force close buffer
 
 map('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)    -- go to buffer no x
 map('n', '<A-2>', '<Cmd>BufferGoto 2<CR>', opts)
