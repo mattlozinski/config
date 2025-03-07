@@ -1,4 +1,18 @@
 require("lazy").setup({
+    -- splash screen
+    {
+        dir = "~/.config/nvim/lua/minintro.nvim",
+        opts = { color = "#98c379" },
+        config = true,
+        lazy = false
+    },
+
+    -- nice line above commands
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+
     -- advanced undo
 	"mbbill/undotree",
 
