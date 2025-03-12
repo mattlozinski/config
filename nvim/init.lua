@@ -16,7 +16,6 @@ require ('options')
 require ('plugins')
 require ('keymaps')
 require ('colorscheme')
-require ('lsp')
 
 require("colorizer").setup()
 require("indentmini").setup({
